@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>asda</title>
+    <title>Blog Song Ngữ</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h3>ADFSADF</h3>
+    <header>
+        <h1>Blog Song Ngữ</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <span class="language-toggle" onclick="toggleLanguage()">Tiếng Việt</span>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2 id="hero-title">Welcome to Our Blog</h2>
+        <p id="hero-desc">Explore engaging and informative content in both Vietnamese and English.</p>
+    </section>
+
+    <section class="content">
+        <h3 id="post-title">First Post</h3>
+        <p id="post-content">
+            This is the content of our first blog post. We will share useful and interesting information with you.
+        </p>
+    </section>
+
+    <footer>
+        © 2024 Blog Song Ngữ. All rights reserved.
+    </footer>
+
+    <script>
+        function toggleLanguage() {
+            const langToggle = document.querySelector('.language-toggle');
+            const heroTitle = document.getElementById('hero-title');
+            const heroDesc = document.getElementById('hero-desc');
+            const postTitle = document.getElementById('post-title');
+            const postContent = document.getElementById('post-content');
+
+            if (langToggle.textContent === 'Tiếng Việt') {
+                langToggle.textContent = 'English';
+                heroTitle.textContent = 'Chào mừng đến với Blog của chúng tôi';
+                heroDesc.textContent = 'Khám phá nội dung hữu ích và thú vị bằng cả tiếng Việt và tiếng Anh.';
+                postTitle.textContent = 'Bài viết đầu tiên';
+                postContent.textContent = 'Đây là nội dung bài viết đầu tiên của chúng tôi. Chúng tôi sẽ chia sẻ với bạn những thông tin hữu ích và thú vị.';
+            } else {
+                langToggle.textContent = 'Tiếng Việt';
+                heroTitle.textContent = 'Welcome to Our Blog';
+                heroDesc.textContent = 'Explore engaging and informative content in both Vietnamese and English.';
+                postTitle.textContent = 'First Post';
+                postContent.textContent = 'This is the content of our first blog post. We will share useful and interesting information with you.';
+            }
+        }
+    </script>
 </body>
 </html>

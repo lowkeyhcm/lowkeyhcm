@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: 500;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #007BFF;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+.language-toggle {
+    font-size: 14px;
+    cursor: pointer;
+    color: #007BFF;
+    font-weight: 500;
+}
+
+.hero {
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.content h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 20px 40px;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+}
